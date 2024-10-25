@@ -7,6 +7,7 @@ return {
 		require("gruvbox").setup({
 			italic = {
 				strings = false,
+				comments = false,
 			},
 			invert_selection = false,
 			contrast = "soft", -- can be "hard", "soft" or empty string

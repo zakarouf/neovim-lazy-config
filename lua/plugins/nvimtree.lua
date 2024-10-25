@@ -4,23 +4,27 @@ return {
     wants = "nvim-web-devicons",
 	config = function()
 		require('nvim-tree').setup {
-		  diagnostics = {
-			enable = true,
-		  },
+			diagnostics = {
+				enable = true,
+			},
 
-		  view = {
-			width = 25,
-		--    height = 25,
-			side = 'left',
-		  },
+			view = {
+				width = 25,
+				--    height = 25,
+				side = 'left',
+			},
 
-		  renderer = {
-			root_folder_label = false,
-		  },
+			renderer = {
+				root_folder_label = false,
+			},
 
-		  git = {
-			ignore = false,
-		  }
+			git = {
+				ignore = true,
+			},
+
+			sort = {
+				sorter = 'extension'
+			}
 		}
 
 		vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true })

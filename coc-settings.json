@@ -1,3 +1,11 @@
 {
   "snippets.ultisnips.pythonPrompt": false,
+  "languageserver": {
+      "zls" : {
+          "command": "zls",
+          "filetypes": ["zig"]
+      }
+  },
+  "zig.zls.enabled": false
+
 }

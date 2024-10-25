@@ -21,8 +21,6 @@ set.autowrite = true
 set.mouse = "a"
 set.hlsearch = true
 set.incsearch = true
-set.clipboard = "unnamedplus"
-
 set.ruler = true
 set.relativenumber = true
 
