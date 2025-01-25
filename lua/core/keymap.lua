@@ -54,6 +54,10 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "tq", ":bdelete<CR>", opts)
 
+-- TimeStamp
+keymap("i", "<F3>", "<C-r>=strftime('%F %a %T')<CR>", opts)
+keymap("n", "ti", "i<C-r>=strftime('%F %a %T')<CR><ESC>", opts)
+
 -- Insert --
 -- Press jk fast to enter to Normal Mode
 keymap("i", "jk", "<ESC>", opts)
